@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/individualreceipt_popup_closebutton"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/closeiconblack"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:fontFamily="@font/extrabold"
+                        android:text="강예빈"
+                        android:textColor="@color/yellow"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/extrabold"
+                        android:text="님 주문 내역"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/individualreceipt_popup_imagemenu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/menulistimage"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/individulareceipt_popoup_textmenu_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+
+                    <ListView
+                        android:id="@+id/each_receipt_show_list_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></ListView>
+
+                    <ListView
+                        android:id="@+id/each_receipt_show_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></ListView>
+
+                    <ImageView
+                        android:id="@+id/individualreceipt_popup_wholecostline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shortline"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="23dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginStart="38dp">
+
+                    <TextView
+                        android:id="@+id/individualreceipt_popup_wholecost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="총 원"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/individualreceipt_edit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:layout_gravity="end"
+                        android:text="수정"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical"
+                        android:clickable="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

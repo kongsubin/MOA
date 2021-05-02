@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991856634075",
+    "project_id": "hgumoa",
+    "storage_bucket": "hgumoa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991856634075:android:96d2123d018866871384fe",
+        "android_client_info": {
+          "package_name": "com.handong.moa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991856634075-ts2lvt5jttqncvu06bnip3e23lqhe3h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.handong.moa",
+            "certificate_hash": "ee15c1937f3cab1f2715fff92795feb83b41f90f"
+          }
+        },
+        {
+          "client_id": "991856634075-9almlb87a7au17qf3mqi56psg17dm7e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeEaN_0WAhRq9geeWl-1uG4eBiNRaJZXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991856634075-9almlb87a7au17qf3mqi56psg17dm7e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
